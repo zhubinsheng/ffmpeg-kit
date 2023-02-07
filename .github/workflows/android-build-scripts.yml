@@ -55,7 +55,8 @@ jobs:
         if: ${{ failure() }}
         run: '[[ -f ./src/ffmpeg/ffbuild/config.log ]] && tail -50 ./src/ffmpeg/ffbuild/config.log'
         # 这里引用了别人写好的发布库，具体参数信息可以查阅上面的链接
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.0.0
-        with: 
-          folder: prebuilt
+      - name: Deploy
+        uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: prebuilt/
