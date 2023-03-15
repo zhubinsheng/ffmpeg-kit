@@ -413,7 +413,7 @@ else
 fi
 
 ###################################################################
-
+chmod +x ./configure
 ./configure \
   --cross-prefix="${HOST}-" \
   --sysroot="${ANDROID_SYSROOT}" \
