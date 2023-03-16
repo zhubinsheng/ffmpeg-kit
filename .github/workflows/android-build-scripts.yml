@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-20.04
     strategy:
       matrix:
-        ndk-version: [ 'r21b-linux-x86_64']
+        ndk-version: [ 'r21-linux-x86_64']
     defaults:
       run:
         shell: bash
