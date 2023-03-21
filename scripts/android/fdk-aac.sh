@@ -26,4 +26,4 @@ make install || return 1
 
 # CREATE PACKAGE CONFIG MANUALLY
 # MANUALLY COPY PKG-CONFIG FILES
-cp fdk-aac.pc.in "${INSTALL_PKG_CONFIG_DIR}" || return 1
+cp fdk-aac.pc "${INSTALL_PKG_CONFIG_DIR}" || return 1
