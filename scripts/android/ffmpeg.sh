@@ -432,6 +432,7 @@ chmod +x ./configure
   --nm="${NM}" \
   --extra-libs="$(pkg-config --libs --static cpu-features)" \
   --disable-autodetect \
+  --enable-nonfree \
   --enable-cross-compile \
   --enable-pic \
   --enable-jni \
