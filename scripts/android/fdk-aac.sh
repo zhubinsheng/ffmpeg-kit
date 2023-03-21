@@ -24,6 +24,7 @@ echo "Android aac bulid success!"
 
 make install || return 1
 
+cp NOTICE ./COPYING
 # CREATE PACKAGE CONFIG MANUALLY
 # MANUALLY COPY PKG-CONFIG FILES
 cp fdk-aac.pc "${INSTALL_PKG_CONFIG_DIR}" || return 1
