@@ -12,6 +12,10 @@ fi
 AAC_CONFIGURE_FLAGS="--enable-static  --enable-shared --target=android"
 echo "TOOLCHAINS_PREFIX:$TOOLCHAINS_PREFIX"
 
+echo "LIB_INSTALL_PREFIX:${LIB_INSTALL_PREFIX}"
+echo "ANDROID_SYSROOT:${ANDROID_SYSROOT}"
+echo "HOST:${HOST}"
+
 ./configure \
   --prefix="${LIB_INSTALL_PREFIX}" \
   --with-sysroot="${ANDROID_SYSROOT}" \
