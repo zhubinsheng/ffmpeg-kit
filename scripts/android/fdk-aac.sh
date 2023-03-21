@@ -9,12 +9,11 @@ if [[ ! -f "${BASEDIR}"/src/"${LIB_NAME}"/configure ]] || [[ ${RECONF_gmp} -eq 1
 fi
 
 #--disable-shared 不能禁用动态链接库ffmpeg需要动态库
-AAC_CONFIGURE_FLAGS="--enable-static  --enable-shared  --enable-strip --enable-pic --target=android"
+AAC_CONFIGURE_FLAGS="--enable-static  --enable-shared --target=android"
 echo "TOOLCHAINS_PREFIX:$TOOLCHAINS_PREFIX"
 
 ./configure \
   --prefix="${LIB_INSTALL_PREFIX}" \
-  --with-pic \
   --with-sysroot="${ANDROID_SYSROOT}" \
   $AAC_CONFIGURE_FLAGS \
   --host="${HOST}" || return 1
