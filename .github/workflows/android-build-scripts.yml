@@ -54,7 +54,7 @@ jobs:
          --enable-custom-library-1-package-config-file-name=fdk-aac \
          --enable-custom-library-1-ffmpeg-enable-flag=libfdk-aac \
          --enable-custom-library-1-license-file=COPYING \
-         --enable-custom-library-1-uses-cpp \
+         --enable-gpl \
  
       - name: print build logs
         if: ${{ always() }}
