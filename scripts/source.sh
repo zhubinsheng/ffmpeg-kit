@@ -33,7 +33,7 @@ get_library_source() {
     ;;
   ffmpeg)
     SOURCE_REPO_URL="https://github.com/FFmpeg/FFmpeg"
-    SOURCE_ID="ea3d24bbe3c58b171e55fe2151fc7ffaca3ab3d2"
+    SOURCE_ID="2f428de9ebdcd0770de37d874871b25325aebd73"
     SOURCE_TYPE="COMMIT"
     ;;
   fontconfig)
